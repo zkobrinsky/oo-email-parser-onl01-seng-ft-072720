@@ -15,8 +15,8 @@ end
 def parse
   formatted_string = @email_addresses.gsub(", ", "*")
   formatted_string.gsub!(" ", "*")
-  string_to_array = formatted_string.split("*")
-  formatted_string = string_to_array.join(", ")
+  @email_addresses = string_to_array = formatted_string.split("*")
+
   binding.pry
 end
 

@@ -14,7 +14,7 @@ end
 
 def parse
   formatted_string = @email_addresses.gsub(", ", "*")
-  formatted_string.gsub(" ", "*")!
+  formatted_string.gsub!(" ", "*")
   binding.pry
 end
 

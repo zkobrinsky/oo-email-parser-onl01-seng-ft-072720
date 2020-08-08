@@ -13,7 +13,7 @@ def initialize(email_addresses)
 end
 
 def parse
-  formatted_string = @email_addresses.tr(",", "*")
+  formatted_string = @email_addresses.gsub(", ", "*")
   binding.pry
 end
 

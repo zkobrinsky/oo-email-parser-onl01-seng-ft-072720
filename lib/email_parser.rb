@@ -18,6 +18,7 @@ def parse
   formatted_string.gsub!(" ", "*")
   #split into array with "*" as delimeter
   @email_addresses = string_to_array = formatted_string.split("*")
+  #remove duplicates
   @email_addresses.uniq
 
 end

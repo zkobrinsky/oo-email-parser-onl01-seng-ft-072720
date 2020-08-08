@@ -11,4 +11,9 @@ def initialize(email_addresses)
   @email_addresses = email_addresses
 end
 
+def parse
+  formatted_string = @email_addresses.tr(",  ", "*")
+  binding.pry
+end
+
 end

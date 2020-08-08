@@ -13,8 +13,10 @@ def initialize(email_addresses)
 end
 
 def parse
+  #replace ", " and " " with "*"
   formatted_string = @email_addresses.gsub(", ", "*")
   formatted_string.gsub!(" ", "*")
+  #split into array with "*" as delimeter
   @email_addresses = string_to_array = formatted_string.split("*")
   @email_addresses.uniq
 
